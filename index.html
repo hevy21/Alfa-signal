@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Альфа-Сигнал — новостная аналитика</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">А</span><div><strong>Альфа-Банк</strong><small>Альфа-Сигнал</small></div></div>
+      <div class="nav-caption">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+      <button class="nav-item active"><span>◈</span> Новостная аналитика</button>
+      <div class="sidebar-note"><span class="pulse"></span><div><b>Демо-режим</b><p>Подготовленные данные для хакатона</p></div></div>
+      <div class="sidebar-footer">Интеллектуальная аналитика<br>для бизнеса</div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><span class="eyebrow">АЛЬФА-БИЗНЕС · АНАЛИТИКА</span><h1>Альфа-Сигнал</h1></div><div class="user-pill"><span class="user-avatar">А</span><span>Демо-профиль</span></div></header>
+      <section class="intro"><div><h2>Новости, которые имеют значение для вашего бизнеса</h2><p>Сервис сопоставляет бизнес-контекст компании с экономическими событиями и аналитикой Альфа-Банка.</p></div><div class="demo-badge">● ДЕМОНСТРАЦИОННЫЕ ДАННЫЕ</div></section>
+      <section class="company-panel panel"><div class="section-head"><div><span class="eyebrow">ШАГ 01</span><h3>Выберите компанию</h3></div><span class="muted">Профиль влияет на приоритет новостей</span></div>
+        <div class="company-controls"><select id="companySelect" aria-label="Выберите компанию"></select><div id="companyTags" class="tags"></div></div><p id="companyDescription" class="company-description"></p>
+      </section>
+      <section class="metrics" id="metrics"></section>
+      <section class="content-grid">
+        <div class="panel news-panel"><div class="section-head"><div><span class="eyebrow">ШАГ 02</span><h3>Сигналы для компании</h3></div><select id="typeFilter" class="filter" aria-label="Фильтр новостей"><option value="all">Все события</option><option value="risk">Риски</option><option value="opportunity">Возможности</option></select></div><div id="newsList" class="news-list"></div></div>
+        <aside class="panel analysis-panel"><div class="section-head"><div><span class="eyebrow">ШАГ 03</span><h3>Бизнес-интерпретация</h3></div></div><div id="analysisDetail"></div></aside>
+      </section>
+      <section class="panel process-panel"><div class="section-head"><div><span class="eyebrow">ЛОГИКА РЕШЕНИЯ</span><h3>Как формируется сигнал</h3></div><span class="muted">Демонстрация последовательности шагов</span></div><div class="process-steps"><div class="step done"><span>1</span><b>Профиль компании</b><small>Отрасль и бизнес-факторы</small></div><div class="step done"><span>2</span><b>Отбор событий</b><small>Релевантность контексту</small></div><div class="step done"><span>3</span><b>Сопоставление</b><small>Аналитика Альфа-Банка</small></div><div class="step done"><span>4</span><b>Проверка вывода</b><small>Факты и ограничения</small></div></div><p class="demo-disclaimer">В текущем MVP этапы и аналитические выводы подготовлены заранее. Автоматический сбор новостей и вызов LLM пока не подключены.</p></section>
+      <footer>Альфа-Сигнал · Прототип для «Альфа Хак» <span>Не является инвестиционной рекомендацией</span></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
